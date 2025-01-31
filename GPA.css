@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+input {
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #143d87;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 2rem;
+    box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.27);
+}
+
+.inner-box {
+    width: calc(100% - 2rem);
+    padding: 2rem;
+    margin: 0 auto;
+}
+#courses {
+    margin-bottom: 1rem;
+}
+
+.course {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.course input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.remove-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3px;
+
+}
+
+.remove-btn:hover {
+    background-color: #cc0000;
+}
+
+.text {
+    color: #143d87;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.forms-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.logo img {
+    width: 140px;
+    margin-bottom: 1.1rem;
+    margin-left: -280px;
+}
+
+.heading h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #151111;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.input-wrap {
+    position: relative;
+    height: 60px;
+    margin-bottom: 1.5rem;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.input-field {
+    width: 100%;
+    height: 100%;
+    padding-left: 40px;
+    border: none;
+    border-bottom: 1px solid #94c457;
+    font-size: 0.95rem;
+    color: #151111;
+    transition: 0.4s;
+    outline: none;
+}
+
+.login__icon {
+    position: absolute;
+    left: 10px;
+    font-size: 1.4rem;
+}
+
+.input-field:focus + label {
+    top: 10px;
+    font-size: 0.8rem;
+    color: #143d87;
+}
+
+label {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.95rem;
+    color: #bbb;
+    pointer-events: none;
+    transition: 0.4s;
+}
+
+.sign-btn {
+    width: 100%;
+    height: 50px;
+    background-color: #d17640;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.8rem;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    transition: 0.3s;
+}
+
+.sign-btn:hover {
+    background-color: #6aabdf;
+}
+
+.toggle {
+    color: #151111;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.toggle:hover {
+    color: #143d87;
+}
+
+.text {
+    color: #bbb;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.text a {
+    color: #bbb;
+    transition: 0.3s;
+}
+
+.text a:hover {
+    color: #143d87;
+}
+
+@media (max-width: 600px) {
+    .box {
+        width: 95%;
+        max-width: none;
+    }
+
+    .logo img {
+        width: 100px;
+        margin-left: 0;
+    }
+
+    .inner-box {
+        padding: 1rem;
+    }
+}
